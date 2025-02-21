@@ -13,6 +13,7 @@ body {
   background: white;
   padding: 20px 50px;
   border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   border: 2px solid #f1edee;
   min-height: 100vh;
   display: flex;
@@ -22,8 +23,8 @@ body {
   gap: 20px;
 }
 .bogo-text {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 600;
   color: #ff6f91;
   position: relative;
 }
@@ -32,15 +33,15 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  width: 50px;
+  width: 78%;
   height: 2px;
   background: #ccc;
 }
 .bogo-text::before {
-  left: -60px;
+  left: -120px;
 }
 .bogo-text::after {
-  right: -60px;
+  right: -120px;
 }
 
 .wrapper {
@@ -52,7 +53,7 @@ body {
 }
 .pricing-container {
   background: white;
-  padding: 20px 50px;
+  padding: 20px;
   border: 2px solid #d9d6d6;
   position: relative;
   cursor: pointer;
@@ -60,10 +61,11 @@ body {
 .most-popular {
   position: absolute;
   top: -10px;
-  right: -10px;
+  right: -2px;
   background: #ff5b7f;
   color: white;
   font-size: 12px;
+  font-weight: 700;
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -101,12 +103,28 @@ body {
   flex-direction: column;
   gap: 3px;
 }
+.discount-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.details .unit {
+  font-size: 14px;
+  font-weight: 600;
+}
+.standard-price {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
 .discount {
   background: #ff5b7f;
   color: white;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 400;
   padding: 2px 6px;
-  margin-left: 6px;
+  /* margin-left: 6px; */
 }
 .price {
   text-align: right;
@@ -115,14 +133,15 @@ body {
   right: 22px;
 }
 .current-price {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 500;
 }
 .old-price {
   font-size: 10px;
   color: gray;
   text-decoration: line-through;
   text-align: left;
+  font-weight: 400;
 }
 .options {
   margin-top: 10px;
@@ -150,7 +169,7 @@ select {
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .option-row {
@@ -160,20 +179,23 @@ select {
 }
 
 .option-row label {
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 select {
   padding: 8px;
   border: 1px solid #ccc;
   width: 72px;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 400;
 }
 .header {
   display: flex;
-  font-size: 12px;
+  font-size: 10px;
   gap: 50px;
   padding: 0px 25px;
+  font-weight: 400;
 }
 .top-section {
   display: flex;
@@ -183,6 +205,7 @@ select {
 .free-delivery {
   color: #ff6f91;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .total-price {
@@ -195,10 +218,9 @@ select {
   width: 100%;
   background-color: #ff6f91;
   color: white;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 500;
   border: none;
-  border-radius: 10px;
   padding: 12px 0;
   display: flex;
   justify-content: center;
@@ -218,6 +240,7 @@ select {
   font-style: italic;
   text-align: right;
   margin-top: 5px;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
